@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kasir Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 4rem 35px;
+}
+
+.main {
+    
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.14);
+}
+
+.cashier-system {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-list, .cart {
+    width: 46%;
+}
+
+.cart {
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.14);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 12px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #18b518;
+    
+}
+
+h1 {
+    padding: 10px 5px;
+}
+
+p, h3 {
+    margin: 5px 0
+}
+
+.card {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.remove {
+    background-color: red;
+}
+
+.active {
+    background-color: green;
+}
+
+    </style>
+    <div class="container">
+        <div class="main">
+            <h1>Sistem Kasir Sederhana</h1>
+            <div class="cashier-system">
+                <div class="product-list">
+                    <h2>Daftar Produk</h2>
+                    <div id="products"></div>
+                </div>
+                <div class="cart">
+                    <h2>Keranjang Belanja</h2>
+                    <div id="cart-items"></div>
+                    <div id="total"></div>
+                    <button id="checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
